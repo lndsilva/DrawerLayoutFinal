@@ -25,20 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
         idDrawer = findViewById(R.id.idDrawer);
 
-        idTopAppBar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(MainActivity.this,idDrawer,idTopAppBar,R.string.open_drawer, R.string.close_drawer);
-                idDrawer.addDrawerListener(toggle);
 
-                toggle.syncState();
-            }
-        });
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(MainActivity.this, idDrawer, idTopAppBar, R.string.open_drawer, R.string.close_drawer);
+        idDrawer.addDrawerListener(toggle);
 
-
-
-
-
+        toggle.syncState();
 
 
     }
