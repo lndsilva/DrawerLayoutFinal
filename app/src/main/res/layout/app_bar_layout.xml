@@ -9,11 +9,13 @@
         android:layout_height="wrap_content"
         android:theme="@style/Widget.Design.AppBarLayout">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/ToolBar"
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/idTopAppBar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:title="Aplicativo"
+            app:menu="@menu/menu_bar"
             app:navigationIcon="@drawable/baseline_menu" />
 
     </com.google.android.material.appbar.AppBarLayout>
